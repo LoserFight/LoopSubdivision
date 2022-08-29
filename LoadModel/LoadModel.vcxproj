@@ -78,13 +78,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\tools\IDEinclude\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\tools\IDEinclude\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(MSBuildProjectDirectory)\include;D:\tools\IDEinclude\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\tools\IDEinclude\lib;$(MSBuildProjectDirectory)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\tools\IDEinclude\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\tools\IDEinclude\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(MSBuildProjectDirectory)\include;D:\tools\IDEinclude\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\tools\IDEinclude\lib;$(MSBuildProjectDirectory)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
